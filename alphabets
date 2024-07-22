@@ -1,0 +1,51 @@
+Input Format
+
+input consists of Character
+Constraints
+
+No Constraints
+
+Output Format
+
+if the Given input is A,print the statement is "Upper Case".
+if the Given input is a,print the statement is "Lower Case".
+if the Given input is 2,print the statement is "Number".
+if the Given input is &,print the statement is "Symbol".
+Sample Input 0
+
+A
+Sample Output 0
+
+The Given Character A is Upper Case...
+Sample Input 1
+
+a
+Sample Output 1
+
+The Given Character a is Lower Case...
+Sample Input 2
+
+4
+Sample Output 2
+
+The Given Character 4 is Number...
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        char s=sc.next().charAt(0);
+        if(s>='A' && s<='Z')
+            System.out.println("The Given Character "+s+" is Upper Case...");
+        else if (s>='a' && s<='z')
+            System.out.println("The Given Character "+s+" is Lower Case...");
+        else if(s>='0' && s<='9')
+            System.out.println("The Given Character "+s+" is Number...");
+        else
+            System.out.println("The Given Character "+s+" is Symbol...");
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
